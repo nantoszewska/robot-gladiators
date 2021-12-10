@@ -42,7 +42,7 @@ var fight = function(enemyName) {
             window.alert(playerName + " has died!");
             break;
         } else {
-        window.alert(playerName + " still has " + playerHealth + " health left.");
+            window.alert(playerName + " still has " + playerHealth + " health left.");
         }
     }
 };
@@ -72,6 +72,7 @@ var startGame = function() {
 };
 
 var endGame = function() {
+    window.alert ("The game has now ended. Let's see how you did!");
     if (playerHealth > 0) {
         window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".");
     } else {
@@ -90,7 +91,7 @@ var shop = function() {
         "Would you like to REFILL your health, Upgrade your attack, or LEAVE the store? Please enter one: 'REFILL', 'UPGRADE', or 'LEAVE' to make a choice."
     );
     switch (shopOptionPrompt) {
-        case "REILL":
+        case "REFILL":
         case "refill":
             if (playerMoney >= 7) {
                 window.alert("Refilling player's health by 20 for 7 dollars.");
